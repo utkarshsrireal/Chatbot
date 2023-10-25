@@ -58,6 +58,7 @@ def response(user_response):
     flat = vals.flatten()
     flat.sort()
     req_tfidf = flat[-2]
+    print("Cosine Similarity Score:", req_tfidf)
     if(req_tfidf==0):
         robo_response=robo_response+"I am sorry! I don't understand you"
         return robo_response
